@@ -14,6 +14,11 @@
 		04CAA93F269E9F34001949BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CAA93E269E9F34001949BD /* Assets.xcassets */; };
 		04CAA942269E9F34001949BD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04CAA941269E9F34001949BD /* Preview Assets.xcassets */; };
 		04CAA945269E9F34001949BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04CAA943269E9F34001949BD /* LaunchScreen.storyboard */; };
+		04CAA955269EA146001949BD /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CAA954269EA146001949BD /* Helper.swift */; };
+		04CAA95B269EA15E001949BD /* Spartan-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04CAA957269EA15E001949BD /* Spartan-Bold.ttf */; };
+		04CAA95C269EA15E001949BD /* Spartan-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04CAA958269EA15E001949BD /* Spartan-SemiBold.ttf */; };
+		04CAA95D269EA15E001949BD /* Spartan-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04CAA959269EA15E001949BD /* Spartan-Regular.ttf */; };
+		04CAA95E269EA15E001949BD /* Spartan-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 04CAA95A269EA15E001949BD /* Spartan-Medium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		04CAA941269E9F34001949BD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		04CAA944269E9F34001949BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04CAA946269E9F34001949BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04CAA954269EA146001949BD /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		04CAA957269EA15E001949BD /* Spartan-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spartan-Bold.ttf"; sourceTree = "<group>"; };
+		04CAA958269EA15E001949BD /* Spartan-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spartan-SemiBold.ttf"; sourceTree = "<group>"; };
+		04CAA959269EA15E001949BD /* Spartan-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spartan-Regular.ttf"; sourceTree = "<group>"; };
+		04CAA95A269EA15E001949BD /* Spartan-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Spartan-Medium.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +68,14 @@
 		04CAA934269E9F31001949BD /* WeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				04CAA935269E9F31001949BD /* AppDelegate.swift */,
-				04CAA937269E9F31001949BD /* SceneDelegate.swift */,
-				04CAA939269E9F31001949BD /* ContentView.swift */,
-				04CAA93E269E9F34001949BD /* Assets.xcassets */,
-				04CAA943269E9F34001949BD /* LaunchScreen.storyboard */,
-				04CAA946269E9F34001949BD /* Info.plist */,
-				04CAA93B269E9F31001949BD /* WeatherApp.xcdatamodeld */,
+				04CAA951269EA10D001949BD /* Asset */,
+				04CAA94E269EA0E4001949BD /* Database */,
+				04CAA952269EA113001949BD /* Font */,
+				04CAA953269EA13C001949BD /* Helper */,
+				04CAA950269EA0FF001949BD /* LaunchScreen */,
 				04CAA940269E9F34001949BD /* Preview Content */,
+				04CAA94D269EA0D5001949BD /* SupportingFiles */,
+				04CAA94F269EA0EE001949BD /* View */,
 			);
 			path = WeatherApp;
 			sourceTree = "<group>";
@@ -76,6 +86,67 @@
 				04CAA941269E9F34001949BD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04CAA94D269EA0D5001949BD /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				04CAA946269E9F34001949BD /* Info.plist */,
+				04CAA935269E9F31001949BD /* AppDelegate.swift */,
+				04CAA937269E9F31001949BD /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		04CAA94E269EA0E4001949BD /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				04CAA93B269E9F31001949BD /* WeatherApp.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		04CAA94F269EA0EE001949BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04CAA939269E9F31001949BD /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04CAA950269EA0FF001949BD /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				04CAA943269E9F34001949BD /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		04CAA951269EA10D001949BD /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				04CAA93E269E9F34001949BD /* Assets.xcassets */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		04CAA952269EA113001949BD /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				04CAA957269EA15E001949BD /* Spartan-Bold.ttf */,
+				04CAA95A269EA15E001949BD /* Spartan-Medium.ttf */,
+				04CAA959269EA15E001949BD /* Spartan-Regular.ttf */,
+				04CAA958269EA15E001949BD /* Spartan-SemiBold.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		04CAA953269EA13C001949BD /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				04CAA954269EA146001949BD /* Helper.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +209,10 @@
 				04CAA945269E9F34001949BD /* LaunchScreen.storyboard in Resources */,
 				04CAA942269E9F34001949BD /* Preview Assets.xcassets in Resources */,
 				04CAA93F269E9F34001949BD /* Assets.xcassets in Resources */,
+				04CAA95E269EA15E001949BD /* Spartan-Medium.ttf in Resources */,
+				04CAA95B269EA15E001949BD /* Spartan-Bold.ttf in Resources */,
+				04CAA95C269EA15E001949BD /* Spartan-SemiBold.ttf in Resources */,
+				04CAA95D269EA15E001949BD /* Spartan-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -150,6 +225,7 @@
 			files = (
 				04CAA93D269E9F31001949BD /* WeatherApp.xcdatamodeld in Sources */,
 				04CAA936269E9F31001949BD /* AppDelegate.swift in Sources */,
+				04CAA955269EA146001949BD /* Helper.swift in Sources */,
 				04CAA938269E9F31001949BD /* SceneDelegate.swift in Sources */,
 				04CAA93A269E9F31001949BD /* ContentView.swift in Sources */,
 			);
@@ -294,7 +370,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WeatherApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 29QHNAF88X;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_FILE = WeatherApp/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +379,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +392,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WeatherApp/Preview Content\"";
 				DEVELOPMENT_TEAM = 29QHNAF88X;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = WeatherApp/Info.plist;
+				INFOPLIST_FILE = WeatherApp/SupportingFiles/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,7 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.app.WeatherApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
